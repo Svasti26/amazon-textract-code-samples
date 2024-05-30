@@ -1,7 +1,7 @@
 import boto3
 
 # Document
-documentName = "medical-notes.png"
+documentName = "IMG_20240529_124037.jpg"
 
 # Amazon Textract client
 textract = boto3.client('textract')
@@ -25,11 +25,11 @@ for item in response["Blocks"]:
         text = text + " " + item["Text"]
 
 # Amazon Comprehend client
-comprehend = boto3.client('comprehendmedical')
+comprehend = boto3.client('comprehendservicereport')
 
 # Detect medical entities
 entities =  comprehend.detect_entities(Text=text)
-print("\nMedical Entities\n========")
+print("\nService Reports\n========")
 for entity in entities["Entities"]:
     print("- {}".format(entity["Text"]))
     print ("   Type: {}".format(entity["Type"]))
