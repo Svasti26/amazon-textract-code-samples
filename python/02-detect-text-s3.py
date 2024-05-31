@@ -16,6 +16,7 @@ response = textract.detect_document_text(
         }
     })
 
+
 #print(response)
 
 # Print detected text
