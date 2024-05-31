@@ -1,7 +1,7 @@
 import boto3
 
 # Document
-documentName = "two-column-image.jpg"
+documentName = "IMG_20240529_124037.jpg"
 
 # Amazon Textract client
 textract = boto3.client('textract')

@@ -2,7 +2,7 @@ import boto3
 from trp import Document
 
 # Document
-documentName = "employmentapp.png"
+documentName = "IMG_20240529_124037.jpg"
 
 # Amazon Textract client
 textract = boto3.client('textract')

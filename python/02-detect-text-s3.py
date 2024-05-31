@@ -2,7 +2,7 @@ import boto3
 
 # Document
 s3BucketName = "ki-textract-demo-docs"
-documentName = "simple-document-image.jpg"
+documentName = "IMG_20240529_124037.jpg"
 
 # Amazon Textract client
 textract = boto3.client('textract')
